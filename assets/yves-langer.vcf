@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Langer;Yves;;;
+FN:Yves Langer
+ORG:Smart Vision
+TITLE:Independent electricity market design expert
+EMAIL;TYPE=INTERNET:info@smart-vision.be
+TEL;TYPE=CELL:+32476608181
+ADR;TYPE=WORK:;;Au Rond Chene 31;Embourg;;4053;Belgium
+URL:https://www.smart-vision.be
+URL;TYPE=Booking:https://meeting.smart-vision.be
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/yveslanger/
+NOTE:Smart Vision provides independent expertise in electricity market design, with a focus on pricing, congestion management, and the practical use of advanced analytical methods.
+END:VCARD
