@@ -348,11 +348,7 @@ h1 {
 
 .work-list article {
   padding-top: 18px;
-  border-top: 2px solid #b9c7ca;
-}
-
-.work-list article:first-child {
-  border-top-color: var(--copper);
+  border-top: 1px solid var(--line);
 }
 
 .evidence {
