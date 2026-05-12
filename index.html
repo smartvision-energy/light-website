@@ -203,6 +203,18 @@
               <small>Download contact details</small>
             </span>
           </a>
+          <button class="contact-card contact-button" type="button" id="qr-open" aria-haspopup="dialog">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" focusable="false">
+                <path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4z"/>
+                <path d="M14 14h2M18 14h2M14 17h6M14 20h2M18 20h2"/>
+              </svg>
+            </span>
+            <span>
+              <strong>QR code</strong>
+              <small>Scan or share contact details</small>
+            </span>
+          </button>
           <a class="contact-card" href="https://goo.gl/maps/nouDkz6vx65DiyoV7" target="_blank" rel="noopener">
             <span class="contact-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" focusable="false">
@@ -230,6 +242,23 @@
         </div>
       </section>
     </main>
+
+    <div class="qr-modal" id="qr-modal" role="dialog" aria-modal="true" aria-labelledby="qr-title" hidden>
+      <button class="qr-backdrop" type="button" id="qr-backdrop" aria-label="Close QR code"></button>
+      <div class="qr-dialog">
+        <button class="qr-close" type="button" id="qr-close" aria-label="Close QR code">
+          <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+            <path d="M6 6l12 12M18 6 6 18"/>
+          </svg>
+        </button>
+        <div class="qr-dialog-logo" aria-hidden="true">
+          <img src="assets/logo-current.svg" alt="">
+        </div>
+        <h2 id="qr-title">Smart Vision contact QR</h2>
+        <img class="qr-image" src="assets/qr-vcard.png" alt="QR code for Yves Langer contact details">
+        <a class="button primary" href="assets/yves-langer.vcf" download>Download vCard</a>
+      </div>
+    </div>
 
     <footer class="site-footer">
       <p>Smart Vision SRL</p>

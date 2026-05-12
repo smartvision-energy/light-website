@@ -1,5 +1,5 @@
 <svg width="720" height="154" viewBox="0 0 720 154" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">logo-04-highest-slightly-lower</title>
+  <title id="title">Smart Vision 04 Highest</title>
   <desc id="desc">Smart Vision wordmark with double-circuit power O and raised contained underline.</desc>
   <g font-family="Inter, Arial, Helvetica, sans-serif" font-weight="840" letter-spacing="-2">
     <text x="8" y="96" font-size="78" fill="#34383B">SMART</text>
@@ -11,6 +11,6 @@
     <circle cx="31" cy="40" r="18" stroke="#0B67A8" stroke-width="3.5" opacity="0.38"/>
     <path d="M31 7V37" stroke="#0B67A8" stroke-width="8" stroke-linecap="round"/>
   </g>
-  <path d="M12 122H572" stroke="#0B67A8" stroke-width="7" stroke-linecap="round"/>
-  <path d="M12 133H572" stroke="#34383B" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <path d="M12 120H572" stroke="#0B67A8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M12 131H572" stroke="#34383B" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
 </svg>

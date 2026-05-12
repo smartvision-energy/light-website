@@ -22,4 +22,33 @@
     phoneReadable.textContent = readable;
     phoneLink.href = `tel:${tel}`;
   }
+
+  const qrOpen = document.querySelector("#qr-open");
+  const qrModal = document.querySelector("#qr-modal");
+  const qrClose = document.querySelector("#qr-close");
+  const qrBackdrop = document.querySelector("#qr-backdrop");
+
+  if (qrOpen && qrModal && qrClose && qrBackdrop) {
+    const closeModal = () => {
+      qrModal.hidden = true;
+      document.body.classList.remove("modal-open");
+      qrOpen.focus();
+    };
+
+    const openModal = () => {
+      qrModal.hidden = false;
+      document.body.classList.add("modal-open");
+      qrClose.focus();
+    };
+
+    qrOpen.addEventListener("click", openModal);
+    qrClose.addEventListener("click", closeModal);
+    qrBackdrop.addEventListener("click", closeModal);
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !qrModal.hidden) {
+        closeModal();
+      }
+    });
+  }
 })();
