@@ -36,6 +36,17 @@ svg {
   max-width: 100%;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 a {
   color: inherit;
 }
@@ -151,6 +162,11 @@ h1 {
   letter-spacing: 0;
 }
 
+.hero-logo {
+  width: min(720px, 100%);
+  margin: 24px 0 18px;
+}
+
 .name-line {
   margin-bottom: 34px;
   color: var(--blue-dark);
@@ -207,16 +223,19 @@ h1 {
 }
 
 .hero-identity {
-  display: grid;
-  grid-template-columns: 128px 1fr;
-  gap: 22px;
-  align-items: end;
-  padding: 22px 0 0 22px;
+  padding: 22px 0 0 28px;
   border-left: 1px solid rgba(23, 32, 42, 0.16);
 }
 
+.identity-intro {
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
 .portrait {
-  width: 128px;
+  width: 148px;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: var(--radius);
@@ -224,14 +243,15 @@ h1 {
 }
 
 .identity-copy p {
-  margin-bottom: 22px;
+  margin-bottom: 0;
   color: var(--muted);
 }
 
 .identity-copy dl {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 16px;
-  margin: 0;
+  margin: 24px 0 0;
 }
 
 .identity-copy dt {
@@ -580,6 +600,11 @@ h1 {
   .resource-row {
     grid-template-columns: 1fr;
   }
+
+  .hero-identity {
+    padding-left: 0;
+    border-left: 0;
+  }
 }
 
 @media (max-width: 720px) {
@@ -616,6 +641,20 @@ h1 {
     font-size: clamp(3.25rem, 17vw, 4.15rem);
     max-width: 6ch;
     overflow-wrap: normal;
+  }
+
+  .hero-logo {
+    width: min(420px, 100%);
+    margin-top: 18px;
+  }
+
+  .identity-intro {
+    grid-template-columns: 96px minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .portrait {
+    width: 96px;
   }
 
   .lead {
