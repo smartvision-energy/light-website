@@ -656,29 +656,27 @@ h1 {
   }
 
   .lead {
-    max-width: 12.5ch;
+    max-width: 30rem;
     font-size: clamp(1.42rem, 7.2vw, 1.9rem);
-    overflow-wrap: break-word;
   }
 
   .support {
-    max-width: 29ch;
+    max-width: 34rem;
   }
 
   .section-heading h2,
   .evidence-copy h2 {
     font-size: clamp(2rem, 10vw, 3rem);
-    max-width: 8.8ch;
-    overflow-wrap: break-word;
+    max-width: 14em;
   }
 
   .evidence-copy h2 {
-    max-width: 16ch;
+    max-width: 14em;
     font-size: clamp(2rem, 9vw, 2.6rem);
   }
 
   .evidence-copy p:last-child {
-    max-width: 29ch;
+    max-width: 34rem;
   }
 
   .card-grid,
@@ -698,7 +696,7 @@ h1 {
   .resource-row p,
   .evidence-copy p,
   .contact-card small {
-    max-width: 29ch;
+    max-width: 34rem;
     overflow-wrap: anywhere;
   }
 
