@@ -58,27 +58,14 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   text-decoration: none;
 }
 
 .brand img {
-  width: 44px;
-  height: 44px;
-}
-
-.brand strong,
-.brand small {
-  display: block;
-}
-
-.brand strong {
-  font-size: 0.98rem;
-}
-
-.brand small {
-  color: var(--muted);
-  font-size: 0.75rem;
+  width: clamp(152px, 19vw, 188px);
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .site-nav {

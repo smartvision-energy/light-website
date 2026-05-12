@@ -1,11 +1,15 @@
-<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Smart Vision mark</title>
-  <desc id="desc">A calm technical mark built from connected electricity market paths.</desc>
-  <rect width="160" height="160" rx="24" fill="#F7F8F6"/>
-  <path d="M39 100C49 116 69 123 88 116C105 110 116 96 116 80C116 58 98 40 76 40C59 40 45 50 39 64" stroke="#17202A" stroke-width="8" stroke-linecap="round"/>
-  <path d="M61 65L79 96L118 48" stroke="#1C72A7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M42 118H118" stroke="#73A873" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="39" cy="64" r="6" fill="#C47B45"/>
-  <circle cx="61" cy="65" r="5" fill="#1C72A7"/>
-  <circle cx="118" cy="48" r="6" fill="#1C72A7"/>
+<svg width="520" height="122" viewBox="0 0 520 122" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Smart Vision logo</title>
+  <desc id="desc">Smart Vision wordmark with a blue power symbol in the word Vision.</desc>
+  <g font-family="Inter, Arial, Helvetica, sans-serif" font-weight="820" letter-spacing="-1">
+    <text x="4" y="72" font-size="57" fill="#3A3A3A">SMART</text>
+    <text x="221" y="72" font-size="57" fill="#0A66B2">VISI</text>
+    <text x="434" y="72" font-size="57" fill="#0A66B2">N</text>
+  </g>
+  <g transform="translate(383 21)">
+    <circle cx="26" cy="31" r="24" fill="none" stroke="#0A66B2" stroke-width="8"/>
+    <path d="M26 3V28" stroke="#0A66B2" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <path d="M7 99H500" stroke="#0A66B2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M7 108H500" stroke="#17202A" stroke-width="1.4" stroke-linecap="round" opacity="0.42"/>
 </svg>
