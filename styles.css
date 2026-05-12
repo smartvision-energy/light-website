@@ -231,12 +231,13 @@ h1 {
   display: grid;
   grid-template-columns: 148px minmax(0, 1fr);
   gap: 22px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .portrait {
   width: 148px;
-  aspect-ratio: 1;
+  height: 100%;
+  min-height: 148px;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -651,6 +652,7 @@ h1 {
 
   .portrait {
     width: 96px;
+    min-height: 96px;
   }
 
   .lead {
@@ -677,10 +679,6 @@ h1 {
 
   .evidence-copy p:last-child {
     max-width: 29ch;
-  }
-
-  .hero-identity {
-    display: none;
   }
 
   .card-grid,
@@ -714,6 +712,18 @@ h1 {
 
   .site-footer {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .identity-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait {
+    width: min(180px, 100%);
+    height: auto;
+    aspect-ratio: 1;
   }
 }
 
