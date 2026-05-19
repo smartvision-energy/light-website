@@ -1,0 +1,33 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Smart Vision LinkedIn featured thumbnail</title>
+  <desc id="desc">Smart Vision thumbnail for independent electricity market design expertise.</desc>
+  <rect width="1200" height="630" fill="#F7FAFC"/>
+  <path d="M0 485C155 426 267 509 412 438C556 367 619 209 764 232C880 250 955 339 1200 252" stroke="#D9E7F2" stroke-width="5" stroke-linecap="round"/>
+  <path d="M0 356C143 299 261 324 378 383C519 453 635 379 735 269C832 162 1002 157 1200 228" stroke="#E5EDF3" stroke-width="4" stroke-linecap="round"/>
+  <path d="M0 572C123 532 248 546 370 575C545 617 675 544 815 456C941 376 1068 351 1200 388" stroke="#EDF3F7" stroke-width="5" stroke-linecap="round"/>
+
+  <g transform="translate(86 74)">
+    <g font-family="Inter, Arial, Helvetica, sans-serif" font-weight="840" letter-spacing="0">
+      <text x="0" y="92" font-size="82" fill="#34383B">SMART</text>
+      <text x="426" y="92" font-size="82" fill="#0B67A8">VISI</text>
+      <text x="666" y="92" font-size="82" fill="#0B67A8">N</text>
+    </g>
+    <g transform="translate(590 18)">
+      <circle cx="38" cy="42" r="35" stroke="#0B67A8" stroke-width="9"/>
+      <circle cx="38" cy="42" r="22" stroke="#0B67A8" stroke-width="4" opacity="0.35"/>
+      <path d="M38 4V39" stroke="#0B67A8" stroke-width="9" stroke-linecap="round"/>
+    </g>
+    <path d="M0 126H768" stroke="#0B67A8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M0 142H768" stroke="#34383B" stroke-width="3" stroke-linecap="round" opacity="0.28"/>
+  </g>
+
+  <g transform="translate(92 298)">
+    <text x="0" y="0" font-family="Inter, Arial, Helvetica, sans-serif" font-size="46" font-weight="680" fill="#17212B">Independent Electricity Market Design Expertise</text>
+    <text x="0" y="76" font-family="Inter, Arial, Helvetica, sans-serif" font-size="30" font-weight="430" fill="#45535F">Pricing · Congestion · Balancing · Algorithms · Decision Support</text>
+  </g>
+
+  <g transform="translate(92 512)">
+    <path d="M0 0H1016" stroke="#0B67A8" stroke-width="3" stroke-linecap="round" opacity="0.95"/>
+    <path d="M0 18H1016" stroke="#34383B" stroke-width="2" stroke-linecap="round" opacity="0.22"/>
+  </g>
+</svg>
