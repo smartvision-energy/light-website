@@ -576,6 +576,193 @@ h1 {
   margin: 0;
 }
 
+.qr-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(90deg, rgba(23, 32, 42, 0.04) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(23, 32, 42, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at 78% 14%, rgba(28, 114, 167, 0.09), transparent 30%),
+    var(--soft);
+  background-size: 64px 64px, 64px 64px, auto, auto;
+}
+
+.qr-landing {
+  display: grid;
+  align-items: center;
+  width: min(100%, 760px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: clamp(22px, 4vw, 42px);
+}
+
+.qr-shell {
+  width: 100%;
+  padding: clamp(22px, 5vw, 42px);
+  border: 1px solid rgba(217, 223, 223, 0.9);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.qr-logo {
+  display: inline-flex;
+  width: min(260px, 78%);
+  margin-bottom: clamp(28px, 6vw, 46px);
+}
+
+.qr-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.qr-identity {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: clamp(18px, 4vw, 28px);
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.qr-portrait {
+  width: 112px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 16px 42px rgba(23, 32, 42, 0.16);
+}
+
+.qr-identity .eyebrow {
+  margin-bottom: 10px;
+}
+
+.qr-identity h1 {
+  margin-bottom: 8px;
+  font-size: clamp(2.3rem, 9vw, 4.4rem);
+  line-height: 0.95;
+  overflow-wrap: anywhere;
+}
+
+.qr-role {
+  margin: 0;
+  color: var(--blue-dark);
+  font-size: clamp(1.02rem, 3vw, 1.35rem);
+  font-weight: 680;
+}
+
+.qr-summary {
+  max-width: 610px;
+  margin-bottom: clamp(24px, 5vw, 34px);
+  color: var(--muted);
+  font-size: clamp(1.05rem, 3vw, 1.32rem);
+  line-height: 1.42;
+}
+
+.qr-primary-action,
+.qr-action {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+  border: 1px solid rgba(23, 32, 42, 0.14);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.qr-primary-action {
+  min-height: 78px;
+  margin-bottom: 14px;
+  padding: 18px;
+  color: #fff;
+  background: var(--ink);
+  box-shadow: 0 18px 46px rgba(23, 32, 42, 0.18);
+}
+
+.qr-primary-action:hover,
+.qr-action:hover {
+  transform: translateY(-1px);
+}
+
+.qr-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.qr-action {
+  min-height: 92px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.qr-action-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(23, 32, 42, 0.14);
+  border-radius: var(--radius);
+  color: var(--blue-dark);
+  background: var(--soft);
+}
+
+.qr-primary-action .qr-action-icon {
+  color: var(--ink);
+  border-color: #fff;
+  background: #fff;
+}
+
+.qr-action-icon svg {
+  width: 23px;
+  height: 23px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.qr-primary-action strong,
+.qr-primary-action small,
+.qr-action strong,
+.qr-action small {
+  display: block;
+}
+
+.qr-primary-action strong,
+.qr-action strong {
+  line-height: 1.18;
+}
+
+.qr-primary-action small,
+.qr-action small {
+  margin-top: 4px;
+  color: inherit;
+  opacity: 0.72;
+  overflow-wrap: anywhere;
+}
+
+.qr-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 20px;
+  margin-top: clamp(24px, 5vw, 36px);
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.qr-footer a {
+  color: var(--blue-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
 @media (max-width: 980px) {
   .hero-inner,
   .section-heading,
@@ -711,6 +898,14 @@ h1 {
   .site-footer {
     flex-direction: column;
   }
+
+  .qr-shell {
+    padding: 22px;
+  }
+
+  .qr-actions {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 480px) {
@@ -722,6 +917,34 @@ h1 {
     width: min(180px, 100%);
     height: auto;
     aspect-ratio: 1;
+  }
+
+  .qr-landing {
+    align-items: start;
+    padding: 14px;
+  }
+
+  .qr-shell {
+    min-height: calc(100vh - 28px);
+  }
+
+  .qr-logo {
+    width: min(220px, 82%);
+    margin-bottom: 28px;
+  }
+
+  .qr-identity {
+    grid-template-columns: 88px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .qr-portrait {
+    width: 88px;
+  }
+
+  .qr-primary-action,
+  .qr-action {
+    align-items: flex-start;
   }
 }
 
