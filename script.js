@@ -38,6 +38,7 @@
     const openModal = () => {
       qrModal.hidden = false;
       document.body.classList.add("modal-open");
+      window.umami?.track("Open QR modal");
       qrClose.focus();
     };
 
