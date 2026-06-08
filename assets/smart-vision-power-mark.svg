@@ -1,0 +1,9 @@
+<svg width="1024" height="1024" viewBox="0 0 70 80" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Smart Vision power mark</title>
+  <desc id="desc">Power-button O symbol from the Smart Vision logo.</desc>
+  <g transform="translate(4 0)">
+    <circle cx="31" cy="40" r="29" stroke="#0B67A8" stroke-width="8"/>
+    <circle cx="31" cy="40" r="18" stroke="#0B67A8" stroke-width="3.5" opacity="0.38"/>
+    <path d="M31 7V37" stroke="#0B67A8" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
